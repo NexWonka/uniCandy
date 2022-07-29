@@ -8,9 +8,9 @@
   <title>Uni Candy</title>
 </head>
 
-<body>
-  <section>
-    <div class="navbar bg-base-100 px-32">
+<body data-scroll-container>
+  <section data-scroll-section>
+    <div class="navbar bg-primary px-32">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -40,9 +40,17 @@
     </div>
   </section>
 
-  <section>
-    <div class="flex flex-col p-10 bg-[url('/assets/4.svg')] bg-cover">
-
+  <section data-scroll-section>
+    <div class="flex flex-col p-10 bg-[url('/assets/4.svg')] bg-cover min-h-screen items-center justify-center">
+      <img data-scroll data-scroll-speed="1" class="relative w-1/2" src="/assets/3.svg" alt="">
+      <img data-scroll data-scroll-speed="2" class="absolute top-20 w-80" src="/assets/2.svg" alt="">
+      <img data-scroll data-scroll-speed="3" class="absolute w-1/2" src="/assets/1.svg" alt="">
+    </div>
+  </section>
+  
+  <section data-scroll-section>
+    <div class="flex flex-col p-10 bg-[url('/assets/4.svg')] bg-cover min-h-screen items-center justify-center">
+      
     </div>
   </section>
   <script type="module" src="/main.js"></script>
